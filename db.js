@@ -12,7 +12,9 @@ var data =
 		"pri": "FIRST COURSE",
 		"sec": "SECOND COURSE",
 		"con": "GARNISH",
-		"alt": "MORE INFO"
+		"alt": "MORE INFO",
+		"vin": "WINE LIST",
+		"all": "ALLERGEN MENU"
 	},
 	"deutsch":
 	{
@@ -22,5 +24,7 @@ var data =
 		"sec": "HAUPTGERICHTE",
 		"con": "GARNISH",
 		"alt": "MEHR INFO"
+		"vin": "WEINKARTE",
+		"all": "ALLERGEN-MENÜ"
 	}
 }
