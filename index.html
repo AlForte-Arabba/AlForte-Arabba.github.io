@@ -24,6 +24,8 @@
 				<li class="sec" formtarget="_blank" onclick="window.open('./PDF/SECONDI.pdf'); return true;">SECONDI</li>
 				<li class="con" formtarget="_blank" onclick="window.open('./PDF/CONTORNI.pdf'); return true;">CONTORNI</li>
 				<li class="alt" formtarget="_blank" onclick="window.open('./PDF/ALTRE INFO.pdf'); return true;">ALTRE INFO</li>
+				<li class="vin" formtarget="_blank" onclick="window.open('./PDF/VINI.pdf'); return true;">CARTA DEI VINI</li>
+				<li class="all" formtarget="_blank" onclick="window.open('./PDF/ALLERGENI.pdf'); return true;">MENU ALLERGENI</li>
 			</ul>
 		</div>
 	<script>
@@ -35,6 +37,8 @@
 		const secEl = document.querySelector('.sec');
 		const conEl = document.querySelector('.con');
 		const altEl = document.querySelector('.alt');
+		const altEl = document.querySelector('.vin');
+		const altEl = document.querySelector('.all');
 
 		link.forEach(el => {
 			el.addEventListener('click', () => {
@@ -49,37 +53,45 @@
 				secEl.textContent = data[attr].sec;
 				conEl.textContent = data[attr].con;
 				altEl.textContent = data[attr].alt;
+				vinEl.textContent = data[attr].vin;
+				allEl.textContent = data[attr].all;
 			});
 		});
 
 		var data = {
 			  "italiano":
 			  {
-			    "men": "MENU TURISTICI",
-					"ant": "ANTIPASTI",
-					"pri": "PRIMI",
-					"sec": "SECONDI",
-					"con": "CONTORNI",
-					"alt": "ALTRE INFO"
+				"men": "MENU TURISTICI",
+				"ant": "ANTIPASTI",
+				"pri": "PRIMI",
+				"sec": "SECONDI",
+				"con": "CONTORNI",
+				"alt": "ALTRE INFO",
+				"vin": "CARTA DEI VINI",
+				"all": "MENU ALLERGENI"
 				},
 				"english":
 			  {
-			    "men": "TOURISTIC MENU",
-			    "ant": "HORS D'OEUVRE",
-					"pri": "FIRST COURSE",
-					"sec": "SECOND COURSE",
-					"con": "GARNISH",
-					"alt": "MORE INFO"
+			    	"men": "TOURISTIC MENU",
+			    	"ant": "HORS D'OEUVRE",
+				"pri": "FIRST COURSE",
+				"sec": "SECOND COURSE",
+				"con": "GARNISH",
+				"alt": "MORE INFO",
+				"alt": "WINE LIST",
+				"all": "ALLERGEN MENU"
 
 			  },
 			  "deutsch":
 			  {
-			    "men": "TURISTISCHE MENU",
-			    "ant": "KALTE VORSPEISEN",
-					"pri": "VORSPEISEN",
-					"sec": "HAUPTGERICHTE",
-					"con": "GARNISH",
-					"alt": "MEHR INFO"
+			    	"men": "TURISTISCHE MENU",
+			    	"ant": "KALTE VORSPEISEN",
+				"pri": "VORSPEISEN",
+				"sec": "HAUPTGERICHTE",
+				"con": "GARNISH",
+				"alt": "MEHR INFO",
+				"vin": "WEINKARTE",
+				"all": "ALLERGEN-MENÜ"
 			  }
 			}
 	</script>
