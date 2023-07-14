@@ -9,8 +9,8 @@ ul
 .content
 {
 	background-image: url("./Foto/sfondo.jpg");
-	background-repeat: repeat;
-  background-size: 100%;
+	background-repeat: none;
+  	background-size: 300%;
 }
 
 .langWrap
@@ -19,7 +19,7 @@ ul
 	display: inline-grid;
 	padding: 5px;
 	float: right;
-	font-size: 20px;
+	font-size: 10px;
 	font-family: Monospace;
 	margin: 5px;
 }
@@ -27,7 +27,7 @@ ul
 a
 {
 	color: #ffca28;
-  background-color: #333;
+  	background-color: #333;
 	width: 90%;
 	margin: 0px;
 	padding: 7px;
@@ -35,7 +35,7 @@ a
 
 a.active
 {
-  color: #ff8000;
+  	color: #ff8000;
 }
 
 .men
@@ -65,13 +65,13 @@ a.active
 
 li
 {
-  background-color: #333;
+  	background-color: #333;
 	display: block;
-	width: 15%;
-	margin-left: 30px;
-	padding: 30px;
+	margin-left: 5px;
+	width: 100px;
+	padding: 25px;
 	text-transform: capitalize;
-	font-size: 30px;
+	font-size: 17px;
 	font-family: Monospace;
 	transition: .1s;
 	transition-timing-function: cubic-bezier(.51,.23,.74,1.52);
