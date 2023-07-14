@@ -69,10 +69,10 @@ li
   	background-color: #333;
 	display: block;
 	margin-left: 5px;
-	width: 100px;
+	width: 110px;
 	padding: 25px;
 	text-transform: capitalize;
-	font-size: 17px;
+	font-size: 16px;
 	font-family: Monospace;
 	transition: .1s;
 	transition-timing-function: cubic-bezier(.51,.23,.74,1.52);
