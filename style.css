@@ -9,8 +9,9 @@ ul
 .content
 {
 	background-image: url("./Foto/sfondo.jpg");
-	background-repeat: none;
+	background-repeat: repeat;
   	background-size: 300%;
+	position: center;
 }
 
 .langWrap
