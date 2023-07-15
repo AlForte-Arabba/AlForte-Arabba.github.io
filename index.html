@@ -18,7 +18,7 @@
 	</div>
 	<div class="content">
 			<ul>
-				<li class="alt" formtarget="_blank" onclick="window.open('./PDF/ALTRE INFO.pdf'); return true;">ALTRE INFO</li>
+				<li class="ben" formtarget="_blank" onclick="window.open('./PDF/ALTRE INFO.pdf'); return true;">BENVENUTI</li>
 				<li class="men" formtarget="_blank" onclick="window.open('./PDF/MENU TURISTICI.pdf'); return true;">MENU TURISTICI</li>
 				<li class="ant" formtarget="_blank" onclick="window.open('./PDF/ANTIPASTI.pdf'); return true;">ANTIPASTI</li>
 				<li class="pri" formtarget="_blank" onclick="window.open('./PDF/PRIMI.pdf'); return true;">PRIMI</li>
@@ -31,12 +31,12 @@
 	<script>
 		const langEl = document.querySelector('.langWrap');
 		const link = document.querySelectorAll('a');
+		const benEl = document.querySelector('.ben');
 		const menEl = document.querySelector('.men');
 		const antEl = document.querySelector('.ant');
 		const priEl = document.querySelector('.pri');
 		const secEl = document.querySelector('.sec');
 		const conEl = document.querySelector('.con');
-		const altEl = document.querySelector('.alt');
 		const vinEl = document.querySelector('.vin');
 		const allEl = document.querySelector('.all');
 
@@ -47,12 +47,12 @@
 
 				const attr = el.getAttribute('language');
 
+				benEl.textContent = data[attr].ben;
 				menEl.textContent = data[attr].men;
 				antEl.textContent = data[attr].ant;
 				priEl.textContent = data[attr].pri;
 				secEl.textContent = data[attr].sec;
 				conEl.textContent = data[attr].con;
-				altEl.textContent = data[attr].alt;
 				vinEl.textContent = data[attr].vin;
 				allEl.textContent = data[attr].all;
 			});
@@ -61,35 +61,35 @@
 		var data = {
 			  "italiano":
 			  {
+				"ben": "BENVENUTI",
 				"men": "MENU TURISTICI",
 				"ant": "ANTIPASTI",
 				"pri": "PRIMI",
 				"sec": "SECONDI",
 				"con": "CONTORNI",
-				"alt": "BENVENUTI",
 				"vin": "CARTA DEI VINI",
 				"all": "MENU ALLERGENI"
 				},
 				"english":
 			  {
+				"ben": "WELCOME",
 			    	"men": "TOURISTIC MENU",
 			    	"ant": "HORS D'OEUVRE",
 				"pri": "FIRST COURSE",
 				"sec": "SECOND COURSE",
 				"con": "GARNISH",
-				"alt": "WELCOME",
 				"vin": "WINE LIST",
 				"all": "ALLERGEN MENU"
 
 			  },
 			  "deutsch":
 			  {
+				"ben": "WILLKOMMEN"
 			    	"men": "TURISTISCHE MENU",
 			    	"ant": "KALTE VORSPEISEN",
 				"pri": "VORSPEISEN",
 				"sec": "HAUPTGERICHTE",
 				"con": "BEILAGEN",
-				"alt": "WILLKOMMEN",
 				"vin": "WEINKARTE",
 				"all": "ALLERGEN-MENÜ"
 			  }
