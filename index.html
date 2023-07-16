@@ -9,14 +9,14 @@
 	<title>Menu</title>
 	</head>
 	<body class="content">
-	<div class="container">
-		<div class="langWrap">
-			<a href="#" language='italiano' class="active">Italiano</a>
-			<a href="#" language='english'>English</a>
-			<a href="#" language='deutsch'>Deutsch</a>
+		<div class="container">
+			<div class="langWrap">
+				<a href="#" language='italiano' class="active">Italiano</a>
+				<a href="#" language='english'>English</a>
+				<a href="#" language='deutsch'>Deutsch</a>
+			</div>
 		</div>
-	</div>
-	<div class="content">
+		<div class="content">
 			<ul>
 				<li class="ben" formtarget="_blank" onclick="window.open('./PDF/ALTRE INFO.pdf'); return true;">BENVENUTI</li>
 				<li class="men" formtarget="_blank" onclick="window.open('./PDF/MENU TURISTICI.pdf'); return true;">MENU TURISTICI</li>
@@ -28,37 +28,40 @@
 				<li class="all" formtarget="_blank" onclick="window.open('./PDF/ALLERGENI.pdf'); return true;">MENU ALLERGENI</li>
 			</ul>
 		</div>
-	<script>
-		const langEl = document.querySelector('.langWrap');
-		const link = document.querySelectorAll('a');
-		const benEl = document.querySelector('.ben');
-		const menEl = document.querySelector('.men');
-		const antEl = document.querySelector('.ant');
-		const priEl = document.querySelector('.pri');
-		const secEl = document.querySelector('.sec');
-		const conEl = document.querySelector('.con');
-		const vinEl = document.querySelector('.vin');
-		const allEl = document.querySelector('.all');
+		<script>
+			const langEl = document.querySelector('.langWrap');
+			const link = document.querySelectorAll('a');
+			const benEl = document.querySelector('.ben');
+			const menEl = document.querySelector('.men');
+			const antEl = document.querySelector('.ant');
+			const priEl = document.querySelector('.pri');
+			const secEl = document.querySelector('.sec');
+			const conEl = document.querySelector('.con');
+			const vinEl = document.querySelector('.vin');
+			const allEl = document.querySelector('.all');
 
-		link.forEach(el => {
-			el.addEventListener('click', () => {
-				langEl.querySelector('.active').classList.remove('active');
-				el.classList.add('active');
+			link.forEach(el => 
+			{
+				el.addEventListener('click', () => 
+				{
+					langEl.querySelector('.active').classList.remove('active');
+					el.classList.add('active');
 
-				const attr = el.getAttribute('language');
+					const attr = el.getAttribute('language');
 
-				benEl.textContent = data[attr].ben;
-				menEl.textContent = data[attr].men;
-				antEl.textContent = data[attr].ant;
-				priEl.textContent = data[attr].pri;
-				secEl.textContent = data[attr].sec;
-				conEl.textContent = data[attr].con;
-				vinEl.textContent = data[attr].vin;
-				allEl.textContent = data[attr].all;
+					benEl.textContent = data[attr].ben;
+					menEl.textContent = data[attr].men;
+					antEl.textContent = data[attr].ant;
+					priEl.textContent = data[attr].pri;
+					secEl.textContent = data[attr].sec;
+					conEl.textContent = data[attr].con;
+					vinEl.textContent = data[attr].vin;
+					allEl.textContent = data[attr].all;
+				});
 			});
-		});
 
-		var data = {
+			var data = 
+			{
 			  	"italiano":
 			 	 {
 					"ben": "BENVENUTI",
@@ -84,7 +87,7 @@
 			  	},
 			  	"deutsch":
 			  	{
-					"ben": "WILLKOMMEN"
+					"ben": "WILLKOMMEN",
 			    		"men": "TURISTISCHE MENU",
 			    		"ant": "KALTE VORSPEISEN",
 					"pri": "VORSPEISEN",
@@ -94,7 +97,7 @@
 					"all": "ALLERGEN-MENÜ"
 			 	}
 			}
-		</script>
+			</script>
 		</body>
 	</link>
 </html>
