@@ -3,6 +3,7 @@ var data =
 	"italiano":
 	{
 		"men": "MENU TURISTICI",
+		"bar": "MENU BAR",
 		"ant": "ANTIPASTI",
 		"pri": "PRIMI",
 		"sec": "SECONDI",
@@ -14,6 +15,7 @@ var data =
 	"english":
 	{
 		"men": "TOURISTIC MENU",
+		"bar": "BAR MENU",
 	    	"ant": "HORS D'OEUVRE",
 		"pri": "FIRST COURSE",
 		"sec": "SECOND COURSE",
@@ -25,6 +27,7 @@ var data =
 	"deutsch":
 	{
 		"men": "TURISTISCHE MENU",
+		"bar": "BAR-MENÜ",
 		"ant": "KALTE VORSPEISEN",
 		"pri": "VORSPEISEN",
 		"sec": "HAUPTGERICHTE",
