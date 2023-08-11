@@ -26,6 +26,7 @@
 				<li class="con" formtarget="_blank" onclick="window.open('./PDF/CONTORNI.pdf'); return true;">CONTORNI</li>
 				<li class="vin" formtarget="_blank" onclick="window.open('./PDF/VINI.pdf'); return true;">CARTA DEI VINI</li>
 				<li class="all" formtarget="_blank" onclick="window.open('./PDF/ALLERGENI.pdf'); return true;">MENU ALLERGENI</li>
+				<li class="all" formtarget="_blank" onclick="window.open('./PDF/BAR.pdf'); return true;">MENU BAR</li>
 			</ul>
 		</div>
 		<script>
@@ -39,6 +40,7 @@
 			const conEl = document.querySelector('.con');
 			const vinEl = document.querySelector('.vin');
 			const allEl = document.querySelector('.all');
+			const barEl = document.querySelector('.bar');
 
 			link.forEach(el => 
 			{
@@ -57,6 +59,7 @@
 					conEl.textContent = data[attr].con;
 					vinEl.textContent = data[attr].vin;
 					allEl.textContent = data[attr].all;
+					barEl.textContent = data[attr].bar;
 				});
 			});
 
@@ -71,7 +74,8 @@
 					"sec": "SECONDI",
 					"con": "CONTORNI",
 					"vin": "CARTA DEI VINI",
-					"all": "MENU ALLERGENI"
+					"all": "MENU ALLERGENI",
+					"bar": "MENU BAR"
 				},
 				"english":
 				{
@@ -82,7 +86,8 @@
 					"sec": "SECOND COURSE",
 					"con": "GARNISH",
 					"vin": "WINE LIST",
-					"all": "ALLERGEN MENU"
+					"all": "ALLERGEN MENU",
+					"bar": "BAR MENU"
 
 			  	},
 			  	"deutsch":
@@ -94,7 +99,8 @@
 					"sec": "HAUPTGERICHTE",
 					"con": "BEILAGEN",
 					"vin": "WEINKARTE",
-					"all": "ALLERGEN-MENÜ"
+					"all": "ALLERGEN-MENÜ",
+					"bar": "BAR-MENÜ"
 			 	}
 			}
 			</script>
