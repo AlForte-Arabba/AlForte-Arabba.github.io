@@ -43,6 +43,10 @@ a.active
 {
 	color: #e1c699;
 }
+.bar
+{
+	color: #e1c699;
+}
 .men
 {
 	color: #ffca25;
@@ -70,10 +74,6 @@ a.active
 .all
 {
 	color: #ffca25;
-}
-.bar
-{
-	color: #e1c699;
 }
 
 li
