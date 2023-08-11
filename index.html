@@ -33,6 +33,7 @@
 			const langEl = document.querySelector('.langWrap');
 			const link = document.querySelectorAll('a');
 			const benEl = document.querySelector('.ben');
+			const barEl = document.querySelector('.bar');
 			const menEl = document.querySelector('.men');
 			const antEl = document.querySelector('.ant');
 			const priEl = document.querySelector('.pri');
@@ -40,7 +41,6 @@
 			const conEl = document.querySelector('.con');
 			const vinEl = document.querySelector('.vin');
 			const allEl = document.querySelector('.all');
-			const barEl = document.querySelector('.bar');
 
 			link.forEach(el => 
 			{
@@ -52,6 +52,7 @@
 					const attr = el.getAttribute('language');
 
 					benEl.textContent = data[attr].ben;
+					barEl.textContent = data[attr].bar;
 					menEl.textContent = data[attr].men;
 					antEl.textContent = data[attr].ant;
 					priEl.textContent = data[attr].pri;
@@ -59,7 +60,6 @@
 					conEl.textContent = data[attr].con;
 					vinEl.textContent = data[attr].vin;
 					allEl.textContent = data[attr].all;
-					barEl.textContent = data[attr].bar;
 				});
 			});
 
@@ -68,39 +68,39 @@
 			  	"italiano":
 			 	 {
 					"ben": "BENVENUTI",
+					"bar": "MENU BAR",
 					"men": "MENU TURISTICI",
 					"ant": "ANTIPASTI",
 					"pri": "PRIMI",
 					"sec": "SECONDI",
 					"con": "CONTORNI",
 					"vin": "CARTA DEI VINI",
-					"all": "MENU ALLERGENI",
-					"bar": "MENU BAR"
+					"all": "MENU ALLERGENI"
 				},
 				"english":
 				{
 					"ben": "WELCOME",
+					"bar": "BAR MENU",
 			    		"men": "TOURISTIC MENU",
 			    		"ant": "HORS D'OEUVRE",
 					"pri": "FIRST COURSE",
 					"sec": "SECOND COURSE",
 					"con": "GARNISH",
 					"vin": "WINE LIST",
-					"all": "ALLERGEN MENU",
-					"bar": "BAR MENU"
+					"all": "ALLERGEN MENU"
 
 			  	},
 			  	"deutsch":
 			  	{
 					"ben": "WILLKOMMEN",
+					"bar": "BAR-MENÜ",
 			    		"men": "TURISTISCHE MENU",
 			    		"ant": "KALTE VORSPEISEN",
 					"pri": "VORSPEISEN",
 					"sec": "HAUPTGERICHTE",
 					"con": "BEILAGEN",
 					"vin": "WEINKARTE",
-					"all": "ALLERGEN-MENÜ",
-					"bar": "BAR-MENÜ"
+					"all": "ALLERGEN-MENÜ"
 			 	}
 			}
 			</script>
